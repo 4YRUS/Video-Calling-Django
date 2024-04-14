@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Join Room | {% endblock %}
+
+{% block content %}
+
+<form method="POST" style="width: 50vh; position: absolute; top: 50%; left:50%; transform:translate(-50%,-50%);">
+	{% csrf_token %}
+	<div >
+		<center><h4>Join Room</h4></center><br>
+		<input class="form-control" type="text" name="roomid" placeholder='Enter Room Id'	><br>
+		<center><button type="submit" class="btn btn-primary">Submit</button></center>
+	</div>
+
+</form>
+
+{% endblock %}

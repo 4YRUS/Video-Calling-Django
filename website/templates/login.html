@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %} Login |  {% endblock %}
+
+{% block content %}
+
+<div class='container' style=" height: 50vh; width: 50vw; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
+	<form method="POST">
+		{% csrf_token %}
+		<center><h2>LOGIN</h2></center>
+	  <div class="mb-3">
+	    <label for="exampleInputEmail1" class="form-label"><strong>Username :</strong></label>
+	    <input type="text" name='username' class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+	  </div>
+	  <div class="mb-3">
+	    <label for="exampleInputPassword1" class="form-label"><strong>Password :</strong></label>
+	    <input type="password" name='password' class="form-control" id="exampleInputPassword1">
+	  </div>
+		<center><button type="submit" class="btn btn-primary">Submit</button>
+</center>	  
+	</form>
+</div>
+
+{% endblock %}

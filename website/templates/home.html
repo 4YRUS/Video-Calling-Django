@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="width: 50vw; height: 50vh; position: absolute; top:50%; left:50%; transform:translate(-50%,-50%); display: flex; flex-direction: column; gap: 50px; justify-content: center; align-items: center; ">
+	<a href="{% url 'room' %}" class="btn btn-primary" style="width: 400px"><h4>Create Meeting</h4></a>
+	<a href="{% url 'joinroom' %}" class="btn btn-primary" style="width: 400px"><h4>Join Meeting</h4> </a>
+</div>
+{% endblock %}
